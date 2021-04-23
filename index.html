@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" hreflang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>WordPress Blog Search</title>
+		<script src="https://kit.fontawesome.com/7ee5a2a00a.js" crossorigin="anonymous"></script>
+		<meta name="description" content="A search bar for WordPress blogs that are missing one." />
+		<meta name="robots" content="index, follow, max-snippet: -1, max-image-preview:large, max-video-preview: -1" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="A search bar for WordPress blogs that are missing one." />
+		<meta property="og:site_name" content="WordPress Blog Search" />
+		<meta property="og:image" content="http://assets.stickpng.com/images/5847f59fcef1014c0b5e4898.png" />
+		<meta property="og:image:secure_url" content="http://assets.stickpng.com/images/5847f59fcef1014c0b5e4898.png" />
+		<meta property="og:image:width" content="400" />
+		<meta property="og:image:height" content="400" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:description" content="A search bar for WordPress blogs that are missing one." />
+		<meta name="twitter:site" content="WordPress Blog Search" />
+		<meta name="twitter:image" content="http://assets.stickpng.com/images/5847f59fcef1014c0b5e4898.png" />
+		<link rel="icon" href="http://assets.stickpng.com/images/5847f59fcef1014c0b5e4898.png" sizes="400x400" />
+		<link
+			rel="apple-touch-icon-precomposed"
+			href="http://assets.stickpng.com/images/5847f59fcef1014c0b5e4898.png"
+		/>
+		<meta name="msapplication-TileImage" content="http://assets.stickpng.com/images/5847f59fcef1014c0b5e4898.png" />
+		<meta property="og:title" content="WordPress Blog Search" />
+		<meta property="og:url" content="https://paul-s-reid.com/web-dev/WordPress%20Blog%20Search-html" />
+		<meta name="twitter:title" content="WordPress Blog Search" />
+		<link rel="stylesheet" href="style.min.css" />
+		<meta name="keywords" content="home, root, welcome, WordPress, blog, search, paul reid, paul, reid" />
+		<meta name="author" content="Paul Reid" />
+	</head>
+
+	<body>
+		<h1>Some WordPress blogs don't have a search bar, for some reason.</h1>
+		<h2>Here is something that fixes that problem!</h2>
+		<input type="url" id="url" value="Site address" /><input tpye="search" id="query" value="Query" /><input
+			value="Search"
+			type="button"
+			onclick="submit()"
+		/>
+		<i
+			>Note: Some WordPress blogs don't support or have disabled the feture that allows this to work. Not sure if
+			it's dsabled, or even if it's a WordPress blog? Just enter the URL above, keeping the query blank and
+			see!</i
+		>
+		<script src="script.min.js"></script>
+		<table>
+			<tbody id="result"></tbody>
+		</table>
+	</body>
+</html>
