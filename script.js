@@ -1,5 +1,5 @@
 function submit() {
-	document.getElementById("result").innerHTML   =
+	document.getElementById("result").innerHTML =
 		"<img src='https://media0.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif'>";
 	fetch(
 		document.getElementById("url").value +
@@ -9,7 +9,7 @@ function submit() {
 		.then((response) => response.text())
 		.then((html) => {
 			document.getElementById("result").innerHTML = "";
-			var j                                       = 0;
+			var j = 0;
 			JSON.parse(html).forEach((element) => {
 				fetch(
 					document.getElementById("url").value +
@@ -20,7 +20,7 @@ function submit() {
 					.then((html) => {
 						document.getElementById(
 							"result",
-						).innerHTML                             += `<tr><td class ='odd'>${
+						).innerHTML += `<tr><td class ='odd'>${
 							JSON.parse(html).title.rendered
 						}</td><td class                                           ='even' id='content${j}'></td><td class ='odd'>${
 							JSON.parse(html).content.rendered
@@ -29,7 +29,7 @@ function submit() {
 						}</td></tr>`;
 						document.getElementById(
 							`content${j}`,
-						).innerText     = JSON.parse(html).content.rendered;
+						).innerText = JSON.parse(html).content.rendered;
 						j++;
 					});
 			});
