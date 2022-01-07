@@ -27,9 +27,8 @@ function submit() {
 						}</td><td class ='even'>${
 							JSON.parse(html).date
 						}</td></tr>`;
-						document.getElementById(
-							`content${j}`,
-						).innerText = JSON.parse(html).content.rendered;
+						document.getElementById(`content${j}`).innerText =
+							JSON.parse(html).content.rendered;
 						j++;
 					});
 			});
