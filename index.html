@@ -1,18 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" hreflang="en">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>WordPress Blog Search</title>
-		<script
-			src="https://kit.fontawesome.com/7ee5a2a00a.js"
-			crossorigin="anonymous"
-		></script>
-		<meta
-			name="description"
-			content="A search bar for WordPress blogs that are missing one."
-		/>
+		<script src="https://kit.fontawesome.com/7ee5a2a00a.js" crossorigin="anonymous"></script>
+		<meta name="description" content="A search bar for WordPress blogs that are missing one." />
 		<meta
 			name="robots"
 			content="index, follow, max-snippet: -1, max-image-preview:large, max-video-preview: -1"
@@ -60,10 +54,10 @@
 		<meta property="og:title" content="WordPress Blog Search" />
 		<meta
 			property="og:url"
-			content="https://paul-s-reid.com/web-dev/WordPress%20Blog%20Search-html"
+			content="https://paulsreid.com/WordPress%20Blog%20Search-html"
 		/>
 		<meta name="twitter:title" content="WordPress Blog Search" />
-		<link rel="stylesheet" href="style.min.css" />
+		<link rel="stylesheet" href="style.css" />
 		<meta
 			name="keywords"
 			content="home, root, welcome, WordPress, blog, search, paul reid, paul, reid"
@@ -74,18 +68,17 @@
 	<body>
 		<h1>Some WordPress blogs don't have a search bar, for some reason.</h1>
 		<h2>Here is something that fixes that problem!</h2>
-		<input type="url" id="url" value="Site address" /><input
-			tpye="search"
+		<input id="url" type="url" value="Site address" /><input
 			id="query"
+			tpye="search"
 			value="Query"
 		/><input value="Search" type="button" onclick="submit()" />
 		<i
-			>Note: Some WordPress blogs don't support or have disabled the
-			feture that allows this to work. Not sure if it's dsabled, or even
-			if it's a WordPress blog? Just enter the URL above, keeping the
-			query blank and see!</i
+			>Note: Some WordPress blogs don't support or have disabled the feture that allows this
+			to work. Not sure if it's disabled, or even if it's a WordPress blog? Just enter the URL
+			above and keep the query blank to see!</i
 		>
-		<script src="script.min.js"></script>
+		<script src="script.js"></script>
 		<table>
 			<tbody id="result"></tbody>
 		</table>

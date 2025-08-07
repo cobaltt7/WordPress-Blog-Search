@@ -1,9 +1,9 @@
 input {
-	font-size: 1.17em;
-	font-weight: 700;
 	display: inline;
 	margin: 5px;
 	height: 50px;
+	font-weight: 700;
+	font-size: 1.17em;
 	font-family: arial;
 }
 
@@ -12,8 +12,8 @@ tr * {
 }
 
 td {
-	text-align: center;
 	vertical-align: top;
+	text-align: center;
 }
 
 .odd {
@@ -48,9 +48,9 @@ h3,
 h4,
 h5,
 p {
-	line-height: 1.7em;
-	width: 100%;
 	margin: 0;
+	width: 100%;
+	line-height: 1.7em;
 	text-align: center;
 }
 
